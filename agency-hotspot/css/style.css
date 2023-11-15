@@ -2411,6 +2411,16 @@ ul{list-style: none;}
         display: flex;
         margin-left: 450px;
     }
+@media screen and (max-width: 768px) {
+    .portfolio-content h4 span{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section6left h2{
+        font-size: 23px;
+    }
+}
     .owl-dot.active span {
         background: rgb(94, 89, 92); /* Color of the active dot */
         
