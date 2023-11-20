@@ -530,6 +530,7 @@ section{padding: 0;}
     display: block;
     visibility: visible;
     position: fixed;
+    height: 100vh;
     overflow: hidden;
     z-index: 111111;
     top:0;
@@ -1828,7 +1829,7 @@ svg.slider-shape{
 
     /* Side Nav */
     #pp-nav.left {
-        left: 26px;
+        left: 35px;
     }
     .sticky-logo {
         right: 2px;
@@ -2031,6 +2032,7 @@ svg.slider-shape{
     }
     .navbar-brand {
         margin-right: 0;
+        
     }
 
     /* Nav-Bar */
@@ -2417,7 +2419,7 @@ ul{list-style: none;}
         width: 100%;
         bottom: 10px; /* Adjust the distance from the bottom */
         display: flex;
-        justify-content: center;
+        margin-left: 450px;
     }
     .owl-dot.active span {
         background: rgb(255, 255, 255); /* Color of the active dot */
