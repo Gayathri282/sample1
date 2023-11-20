@@ -2425,5 +2425,16 @@ ul{list-style: none;}
         background: rgb(255, 255, 255); /* Color of the active dot */
         
     }
-   
-    
+
+
+  
+  /* New CSS code for small devices */
+  @media only screen and (max-width: 767px) {
+    .testimonial-img [data-tootik]:after {
+        white-space: nowrap;
+        /* max-width: 100%; */
+        font-size:10px;
+      }
+  }
+  
+  
