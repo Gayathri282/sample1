@@ -230,6 +230,7 @@ $(window).on("load", function () {
                     }, 1800);
                 }
             },
+            
         });
     }
     
@@ -329,11 +330,13 @@ $('.side-nav-menu .nav-menu li a').on("click", function () {
 $('.my_nav_tog').click(function() {
     $('.broad').addClass('broad-nav');
     $('.broad').css({ opacity: "1" });
+    $('.navbar').css({ opacity: "0" });
     $('.head-nav').hide();
     $('body').addClass('show-modal');
 });
 
 $('.btn-close').click(function() {
+    $('.navbar').css({ opacity: "1" });
     $('.broad').css({ opacity: "0" });
     $('body').removeClass('show-modal');
     setTimeout(function() {$('.broad').removeClass('broad-nav')},100);
@@ -344,6 +347,7 @@ $('.broad ul li a').click(function () {
     $('body').removeClass('show-modal');
     setTimeout(function() {$('.broad').removeClass('broad-nav')},100);
 });
+
 
 /* ===================================
     Fixed Broad Nav-Bar
@@ -458,7 +462,6 @@ $(".owl-testimonial").owlCarousel({
         },
     }
 });
-
 /*===================================
     Portfolio Carousel
 ====================================== */
