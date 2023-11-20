@@ -2429,7 +2429,7 @@ ul{list-style: none;}
 
     @media only screen and (min-width: 769px) {
         [data-tootik]:after {
-          font-size: 13px; /* Set the font size to 13px for desktop */
+          font-size: 10px; /* Set the font size to 13px for desktop */
           max-width: none; /* Reset the maximum width */
           white-space: nowrap; /* Prevent multiple lines */
         }
