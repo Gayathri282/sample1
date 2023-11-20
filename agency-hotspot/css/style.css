@@ -2433,7 +2433,7 @@ ul{list-style: none;}
     .testimonial-img [data-tootik]:after {
         white-space: nowrap;
         /* max-width: 100%; */
-        font-size:10px;
+        font-size:7px;
       }
   }
   
