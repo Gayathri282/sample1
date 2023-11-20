@@ -343,11 +343,27 @@ $('.btn-close').click(function() {
 });
 
 $('.broad ul li a').click(function () {
-    $('.navbar').css({ opacity: "1" });
+    // $('.navbar').css({ opacity: "1" });
     $('.broad').css({ opacity: "0" });
     $('body').removeClass('show-modal');
     setTimeout(function() {$('.broad').removeClass('broad-nav')},100);
 });
+var lastScrollTop = 0;
+
+$(window).scroll(function() {
+    var st = $(this).scrollTop();
+
+    if (st > lastScrollTop) {
+        // Scrolling down
+        $('.navbar').css({ opacity: "0" });
+    } else {
+        // Scrolling up
+        $('.navbar').css({ opacity: "1" });
+    }
+
+    lastScrollTop = st;
+});
+
 
 
 /* ===================================
